@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--description de lo que apaeceria en el buscador del navegador-->
+    <meta name="description" content="proyecto de html y css">
+    <meta name="keywords" content="HTML, CSS, página web">
+    <meta name="author" content="Equipo fullstackeros">
+
+    <!-- Enlace a una hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="css/style-basic.css">
+
+    <!-- Enlace a un archivo de icono (favicon) -->
+    <link rel="icon" href="img/Icons y mas/ico-title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Título de la página en la pestaña del navegador -->
+    <title>Ticket Show</title>
+
+</head>
+
+<body>
+    <!-- barra de menu -->
+    <header class="header-cabeza">
+        <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="logo" class="logo-img">
+            <h1>TicketShow</h1>
+        </a>
+        <!-- Agrega el ícono de menú para dispositivos móviles -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="joy">
+            <a href="#      " class="newlink">Cine</a>
+            <a href="teatro.html" class="newlink">Teatro</a>
+            <a href="eventos.html" class="newlink">Eventos</a>
+            <a href="deporte.html" class="newlink">Deporte</a>
+            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
+            <a href="validar.html" class="newlink">Contactanos</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fugit in facere hic ipsum nostrum dignissimos
+            tempore corporis iusto tempora? Commodi eaque sed doloremque facere harum ipsum odit dolorem quod.</p>
+
+
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerop">
+            <p>Diseñado por Team Melocotón - Comisión 23450</p>
+            <p>Seguinos en las redes </p>
+            <a href="https://www.instagram.com/" class='bx bxl-instagram  bx-md' target="_blank"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" class='bx bxl-facebook-circle  bx-md' target="_blank"></a>
+            <a href= "https://twitter.com/?lang=es" class='bx bxl-twitter  bx-md' target="_blank"></a>  
+            <a href="mailto:melocoton1983@gmail.com" class='bx bx-envelope  bx-md'></a>
+            <p>&copy; Derechos Reservados 2023</p>
+        </div>
+    </footer>
+
+    <!-- script de la barra de navegacion -->
+    <script>
+        // JavaScript para mostrar/ocultar la navegación y el botón de cierre
+        const menuIcon = document.querySelector('.menu-icon');
+        const joyNav = document.querySelector('.joy');
+
+        menuIcon.addEventListener('click', () => {
+            joyNav.classList.toggle('show-nav');
+            closeButton.classList.toggle('show-button'); // Mostrar el botón de cierre
+        });
+
+    </script>
+</body>
+
+</html>

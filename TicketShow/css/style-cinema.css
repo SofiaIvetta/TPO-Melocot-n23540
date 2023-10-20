@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* titulo y barra de navegacion*/
+.header-cabeza {
+    display: flex;
+    min-height: 70px;
+    background-color: #800080;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+.contenedor{
+    margin:auto;
+    max-width: 1400px; 
+}
+
+
+.newlink, .logo {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.joy .newlink{
+ font-weight:bold;
+ padding-right: 15px;
+ 
+}
+
+.joy .newlink:hover {
+    color: orangered;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* FIN titulo y barra de navegacino */
+/* banner 1 presentacion, inicio sesion */
+
+.banner {
+    min-height: 70px;
+    background-image: url(../img/Cine/halloween4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #800080;
+}
+
+.banner h2 {
+    font-size: 40px;
+}
+
+.banner h3{
+    font-size:20px;
+}
+
+.banner a {
+    background-color: #9370db;
+    color: white;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 75px;
+}
+
+.banner a:hover {
+    background-color: #663399;
+    color: #c71585;
+}
+
+/* FIN banner 1 presentacion, inicio sesion */
+/* banner 2 */
+
+.section-2 {
+    min-height: 70px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 2px;
+    background-color:#800080 ;
+}
+
+
+/* bloque izquierdo */
+.block-izq {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 3%;
+    text-decoration: none;
+    color: #ff1493;
+}
+
+.izq-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  
+}
+
+.izq-title h2 {
+    font-size: 30px;
+    
+}
+
+
+.izq-img {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.izq-img img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.izq-parrafo {
+    font-size: 16px;
+}
+
+.block-izq:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/* bloque derecho */
+.block-der {
+    height: 100%;
+    background-color: #800080;
+}
+.bloque-derecho {
+    height: 100%;
+    background-color: #4e4e4e;
+}
+
+.block-der a {
+    text-decoration: none;
+    color:rgb(235, 120, 78);
+}
+.bloque-derecho a {
+    text-decoration: none;
+    color:white;
+}
+
+.block-der a:hover {
+    background-color: white;
+    color: black;
+}
+
+.bloque-derecho a:hover {
+    color: black;
+}
+
+.der-title {
+    text-align: center;
+    /*font-family: 'Fjalla One', sans-serif;*/
+    /*text-shadow: 3px 3px 5px rgba(180, 128, 128, 0.829) ;*/
+}
+
+.der-title h3{
+    font-size: 25px;
+    color:#ff1493;;
+}
+
+.der-noticia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin: 30px 0;
+}
+
+.notcia-img {
+    margin: 10px;
+    padding: 10x;
+    
+}
+
+.notcia-img img {
+    object-fit: cover;
+    width: 250px;
+    border: solid 2px black;
+}
+.noticia-img img {
+    object-fit: cover;
+    width: 250px;
+    border: solid 2px black;
+    border-radius: 50%;
+    
+}
+
+.notcia-parrafo {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 10px;
+}
+
+#Sofi a:hover{
+background-color:rgb(253, 189, 116);
+}
+
+#Julian a:hover{
+    background-color:rgb(234, 101, 101);
+}
+#Maxi a:hover{
+    background-color:aqua;
+}
+
+#Fabri a:hover{
+    background-color:rgb(240, 124, 192);
+}
+
+#SomosTS{
+    justify-content:center;
+    align-content:center;
+    padding: 10px 12px;
+    margin:0;
+    text-align: center;
+    }
+
+.color-resaltar{ color:rgb(233, 72, 14)}
+
+/* FIN banner 2 */
+/* banner 3 carrusel */
+
+.carrusel-box {
+    font-size: 22px;
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 3px 3px 5px rgba(180, 128, 128, 0.829) ;
+    background-color: #333;
+    text-align: center;
+    padding: 2px;
+}
+
+.carrusel {
+    display: flex;
+    width: auto;
+    height: 500px;
+}
+
+.element {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .10;
+    transition: .4s ease;
+}
+
+.element:hover {
+    width: 500px;
+    opacity: 1;
+    filter: contrast(150%);
+}
+
+/* fin banner 3 carrusel */
+/* inicia footer */
+
+.youtube{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+  .footerop{
+    background-color:rgb(75, 74, 73);
+    color:white;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    margin:0;
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+}
+
+.footerop a:link{
+    color: black;
+}
+.footerop a:hover{
+    color: orange;
+}
+.footerop a:visited{
+    color:black;
+}
+.footerop a:hover:visited{
+    color: orange;}
+
+
+  /* Estilo para ir a otra pagina */
+ 
+  
+  /* Estilo para la sección de enlaces */
+  .enlaces {
+    flex: 1;
+    margin-right: 20px;
+  }
+    
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding:20px;
+    background-color: white;
+    border: 2px solid lightslategray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color:orange;
+    color:black;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color:orangered;
+}
+
+/*FIN footer */
+
+/*para el cel que desaparezca el yutube*/
+ 
+/*para el celu Iphone 12 pro 390px*/
+@media (min-width: 200px) and (max-width:390px) {
+.banner{
+    width: auto;
+    height: 15%;
+}
+
+.banner h2 {
+    font-size: 20px;
+}
+
+.banner h3{
+    font-size:15px;
+}
+
+
+.banner a {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.section-2{
+    display:none;
+}    
+.notcia-parrafo{
+    display:none;
+
+}
+.carrusel {
+    height: 250px;
+}
+
+.youtube{
+    display:inline-block;
+}
+.carrusel-box{
+    font-size:1em;
+}
+
+}   
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--description de lo que apaeceria en el buscador del navegador-->
+    <meta name="description" content="proyecto de html y css">
+    <meta name="keywords" content="HTML, CSS, página web">
+    <meta name="author" content="Equipo fullstackeros">
+
+    <!-- Enlace a una hoja de estilos CSS externa -->
+    <link rel="stylesheet" href="css/style-basic.css">
+    <link rel="stylesheet" href="css/style-deport.css">
+
+    <!-- Enlace a un archivo de icono (favicon) -->
+    <link rel="icon" href="img/Icons y mas/ico-title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Título de la página en la pestaña del navegador -->
+    <title>Ticket Show</title>
+
+</head>
+
+<body>
+    <!-- barra de menu -->
+    <header class="header-cabeza">
+        <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="logo" class="logo-img">
+            <h1>TicketShow</h1>
+        </a>
+        <!-- Agrega el ícono de menú para dispositivos móviles -->
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="joy">
+            <a href="index.html" class="newlink">Inicio</a>
+            <a href="eventos.html" class="newlink">Eventos</a>
+            <a href="cinema.html" class="newlink">Cine</a>
+            <a href="teatro.html" class="newlink">Teatro</a>
+            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
+            <a href="validar.html" class="newlink">Contactanos</a>
+        </nav>
+    </header>
+    <!-- fin de la barra de menu -->
+
+    <main class="container">
+        <!-- banner 1:presentacion - inicio sesion-->
+        <section class="banner">
+            <h2>Pasión, Desafío y Superación en el Mundo del Rendimiento Físico</h2>
+            <h3>Descupre Tu Pasion</h3>
+            <a href="validar.html">Inicia Sesion</a>
+        </section>
+        <!-- FIN banner 1:presentacion - inicio sesion-->
+
+        <!-- banner 2:tres articulos top-->
+        <section class="section-2">
+            <a href="#" class="block-izq">
+                <div class="izq-title">
+                    <h2>El Espíritu Olímpico: Un Viaje a la Historia y el Significado de los Juegos Olímpicos</h2>
+                    <h3>Descubre la fascinante historia de los Juegos Olímpicos y su profundo impacto en el mundo del
+                        deporte y la cultura global.</h3>
+                </div>
+                <div class="izq-img">
+                    <img src="img/Deportes/olimpic.webp" alt="olimpiadas">
+                </div>
+                <p class="izq-parrafo">En este emocionante <spam>artículo</spam>, exploraremos la rica historia de los
+                    Juegos Olímpicos, desde sus humildes comienzos en la antigua Grecia hasta convertirse en el evento
+                    deportivo internacional más grande y significativo del mundo.</p>
+            </a>
+
+            <aside class="block-der">
+                <div class="der-title">
+                    <h3>Tu Salud y El Deporte</h3>
+                </div>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/comida-saludable.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Comidas Saludables que Potenciarán Tu Rendimiento</h4>
+                        <p>Descubre las mejores opciones de alimentos para optimizar tus entrenamientos y alcanzar tus
+                            metas de acondicionamiento físico.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/comida-saludable2.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Claves para Alcanzar tus Metas de Acondicionamiento Físico</h4>
+                        <p>Descubre estrategias probadas y consejos esenciales para maximizar tus resultados en el
+                            gimnasio y llevar tu entrenamiento al siguiente nivel.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/comida-saludable2.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Nutrición Inteligente: Comidas Saludables y los Riesgos de la Comida Chatarra</h4>
+                        <p>las elecciones alimenticias adecuadas pueden mejorar tu rendimiento deportivo y por qué la
+                            comida chatarra podría ser tu mayor obstáculo en el camino hacia tus objetivos de fitness.
+                        </p>
+                    </div>
+                </a>
+            </aside>
+        </section>
+        <!--FIN banner 2:tres articulos top-->
+
+        <!-- banner 3:carrusel-->
+        <section class="carrusel-box">
+            <h3>DESCUBRE TODO SOBRE EL DEPORTE QUE TE GUSTA</h3>
+            <div class="carrusel">
+                <img src="img/Deportes/futbol-fondo-carrusel.webp" alt="futbol" class="element">
+                <img src="img/Deportes/basquet-fondo-carrusel.webp" alt="basket" class="element">
+                <img src="img/Deportes/f1-oracle-carrusel.webp" alt="f1" class="element">
+                <img src="img/Deportes/entrenamiento2.webp" alt="entrenamiento" class="element">
+                <img src="img/Deportes/boxeo-fondo-carrusel.webp" alt="boxeo" class="element">
+                <img src="img/Deportes/natacion-fondo-carrusel.webp" alt="natacion" class="element">
+            </div>
+        </section>
+        <!-- fin banner 3:carrusel-->
+
+        <!-- banner 4-->
+        <section>
+            <aside class="block-der">
+                <div class="der-title">
+                    <h3>Deporte y Excelencia: Un Vistazo a las Diversas Disciplinas Atléticas</h3>
+                </div>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/karate-informe.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Explora la rica tradición del karate, desde sus orígenes en Okinawa hasta su impacto global,
+                            y descubre los secretos de esta disciplina de autodisciplina y defensa personal.</h4>
+                        <p>En este completo artículo, te adentrarás en el fascinante mundo del karate, un arte marcial
+                            que combina la fuerza física con la sabiduría mental. Desde sus raíces históricas en Okinawa
+                            y su evolución en un deporte globalmente practicado, aprenderás sobre la filosofía del
+                            karate, las técnicas de golpeo y defensa, así como la importancia de la autodisciplina y el
+                            respeto.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/tennis-informe.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Un Deporte de Precisión y Pasión: las reglas y las habilidades esenciales del tenis, un
+                            juego que combina elegancia y competencia en la cancha.</h4>
+                        <p>Te adentrarás en el apasionante mundo del tenis, un deporte que ha cautivado a aficionados y
+                            profesionales por generaciones. Desde sus orígenes en el siglo XIX hasta su estatus actual
+                            como uno de los deportes más populares del mundo, aprenderás sobre la rica historia y
+                            evolución del tennis</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/rugby-informe.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>El Deporte de la Fuerza, la Estrategia y la Camaradería apasionante del rugby, desde sus
+                            raíces históricas hasta las tácticas en el campo de juego, y descubre por qué este deporte
+                            es mucho más que un choque de titanes.</h4>
+                        <p>En el emocionante y físico mundo del rugby, un deporte de equipo que combina fuerza, agilidad
+                            y táctica. Desde sus orígenes en el Reino Unido hasta su expansión global y su inclusión en
+                            torneos internacionales, aprenderás sobre la rica historia y tradiciones del rugby.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/Deportes/golf-informe.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Un Juego de Habilidad, Estrategia y Elegancia de la belleza y la complejidad del golf, desde
+                            su origen histórico hasta las técnicas clave en el campo, y descubre por qué es un deporte
+                            que cautiva a millones en todo el mundo.</h4>
+                        <p>Un deporte que combina destreza física con precisión mental. Desde sus orígenes en Escocia
+                            hasta su estatus actual como uno de los deportes más icónicos y respetados del mundo,
+                            aprenderás sobre la rica historia y evolución del golf.</p>
+                    </div>
+                </a>
+            </aside>
+        </section>
+        <!-- fin banner 4 -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footerop">
+            <p>Diseñado por Team Melocotón - Comisión 23450</p>
+            <p>Seguinos en las redes </p>
+            <a href="https://www.instagram.com/" class='bx bxl-instagram  bx-md' target="_blank"></a>
+            <a href="https://www.facebook.com/?locale=es_LA" class='bx bxl-facebook-circle  bx-md' target="_blank"></a>
+            <a href="https://twitter.com/?lang=es" class='bx bxl-twitter  bx-md' target="_blank"></a>
+            <a href="mailto:melocoton1983@gmail.com" class='bx bx-envelope  bx-md' target="_blank"></a>
+            <p>&copy; Derechos Reservados 2023</p>
+        </div>
+    </footer>
+
+    <!-- script de la barra de navegacion -->
+    <script>
+        // JavaScript para mostrar/ocultar la navegación y el botón de cierre
+        const menuIcon = document.querySelector('.menu-icon');
+        const joyNav = document.querySelector('.joy');
+
+        menuIcon.addEventListener('click', () => {
+            joyNav.classList.toggle('show-nav');
+        });
+    </script>
+</body>
+
+</html>
