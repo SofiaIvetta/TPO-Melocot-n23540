@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico-title.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style-cinema.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>TicketShow</title>
+</head>
+
+<body>
+ 
+        <header class="header-cabeza">
+            <a href="#" class="logo">
+                <img src="img/ico-title.png" alt="logo" class="logo-img">
+                <h1>TicketShow</h1>
+            </a>
+            <nav class="joy">
+                <a href="#" class="newlink">Inicio</a>
+                <a href="#" class="newlink">Deportes</a>
+                <a href="#" class="newlink">Teatro</a>
+                <a href="cinema.html"class="newlink">Cine</a>
+                <a href="#" class="newlink">Eventos</a>
+                <a href="validar.html" class="newlink">Contactanos</a>
+            </nav>
+        </header>  
+    
+        <main>
+
+                <form method="post">
+                    <fieldset>
+                     <br> 
+                        <label for="teatro"><strong>BUSCAR CINE</strong></label>
+                        <select id="teatro" name="teatro" >
+                            <option valaue="a" id="teatro">Cinesmart</option>
+                            <option value="a" id="teatro">Host Abasto</option>
+                            <option value="a" id="teatro">Cinerama</option>
+                            <option value="a" id="teatro">Village Spectaculo</option>
+                            <option value="a" id="teatro">Cinema City</option>
+                            <option value="a" id="teatro">Otro</option>
+                        </select>
+                        <br><br>
+                        <p><b><u>Datos sobre el cine:</u></b></p>
+                        <label for="Nombre"> Nombre:</label>
+                        <input type="text" id="Nombre" placeholder="Nombre" autocomplete="off"> 
+                        <label for="localidad">Localidad: </label><input type="text" id="localidad" placeholder="Localidad" autocomplete="off"> 
+                        <label for="pelicula">Pelicula:</label> </label><input type="text" id="pelicula" placeholder="Pelicula" autocomplete="off">
+                       <label for="fecha"> ¿Te acordas cuando fuiste la última vez?</label>
+                       <input type="radio" name="date" value="1">Si
+                       <input type="radio" name="date" value="2">No 
+                       <input type="date" id="fecha"><br>
+                       <p>¿La pelicula que viste la recomendarias?</p>
+                            <input type="radio" name="concurrencia" value="1">Si
+                            <input type="radio" name="concurrencia" value="2">No
+                    
+                        <p>¿Cómo calificarias los servicios del cine?</p>
+                       <p> Califica del 1 al 5 en ...</p>
+                    <dl>
+                        <dd><label for="clean">*Baños</label>
+                            <input type="radio" name="clean" value="2">1
+                            <input type="radio" name="clean" value="2">2
+                            <input type="radio" name="clean" value="2">3
+                            <input type="radio" name="clean" value="2">4
+                            <input type="radio" name="clean" value="2">5<br></dd>
+
+                        <dd> <label for="salas">*Salas </label>
+                            <input type="radio" name="salas" value="2">1
+                            <input type="radio" name="salas" value="2">2
+                            <input type="radio" name="salas" value="2">3
+                            <input type="radio" name="salas" value="2">4
+                            <input type="radio" name="salas" value="2">5</dd>  
+
+                        <dd> <label for="salas">*Iluminación</label>
+                            <input type="radio" name="luz" value="2">1
+                            <input type="radio" name="luz" value="2">2
+                            <input type="radio" name="luz" value="2">3
+                            <input type="radio" name="luz" value="2">4
+                            <input type="radio" name="luz" value="2">5</dd>
+                        
+                        <dd> <label for="salas">*Sonido</label>
+                            <input type="radio" name="sonido" value="2">1
+                            <input type="radio" name="sonido" value="2">2
+                            <input type="radio" name="sonido" value="2">3
+                            <input type="radio" name="sonido" value="2">4
+                            <input type="radio" name="sonido" value="2">5</dd>      
+                    </dl>
+                        <label>¿Dispone atención para personas con discapacidad?</label>
+                            <input type="radio" name="inclusion" value="1">Si
+                            <input type="radio" name="inclusion" value="2">No
+                         <br><br>
+                         <label>¿Recomendarias este teatro a tus conocidos?</label>
+                            <input type="radio" name="inclusion" value="1">Si
+                            <input type="radio" name="inclusion" value="2">No
+                            <br><br>
+                            <label for="trato"><b><u>Algún comentario extra que quieras hacer:</u></b></label><br>
+                            <textarea name="Comentarios" rows="12" cols="40">Escribe tu comentario...</textarea>
+                            <br>
+                            <center><input type="submit" value="Enviar"></center><!--este formulario no se valida, sólo se valida el form de la pagina validar.html-->
+                            
+                    <br>
+                    <p><center><b>¡MUCHAS GRACIAS POR COLABORAR!</b></center></p>
+                    </fieldset>
+                </form>
+                 
+        </main>
+        <footer>
+            <div class="footerop">
+            <p>Diseñado por team Melocotón - Comisión 23450</p>
+            <p>Seguinos en las redes </p>
+            <a href="https://www.instagram.com/" class='bx bxl-instagram  bx-md'></a>
+            <a href="https://www.facebook.com/?locale=es_LA" class='bx bxl-facebook-circle  bx-md'></a>
+            <a href="https://twitter.com/?lang=es" class='bx bxl-twitter  bx-md'></a>
+            <a href="mailto:melocoton1983@gmail.com" class='bx bx-envelope  bx-md'></a>
+            <p> Derechos reservados 2023</p>
+        </div>
+        </footer>  
+</body>
+</html>

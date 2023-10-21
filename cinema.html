@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--description de lo que apaeceria en el buscador del navegador-->
+        <meta name="description" content="proyecto de html y css">
+        <meta name="keywords" content="HTML, CSS, página web">
+        <meta name="author" content="Equipo fullstackeros">
+
+        <!-- Enlace a una hoja de estilos CSS externa -->
+        <link rel="stylesheet" href="css/style-cinema.css">
+
+        <!-- Enlace a un archivo de icono (favicon) -->
+        <link rel="icon" href="ico-title.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       
+        <title>Ticket Show</title>
+
+    </head>
+
+    <body>
+        
+        <!-- barra de menu -->
+        <header class="header-cabeza">
+            <a href="#" class="logo">
+                <img src="img/ico-title.png" alt="logo" class="logo-img">
+                <h1>TicketShow</h1>
+            </a>
+            <nav class="joy">
+                <a href="#" class="newlink">Inicio</a>
+                <a href="page/sobrenosotros.html" class="newlink">Sobre Nosotros</a>
+                <a href="cines.html" class="newlink">Opiniones y más</a>
+                <a href="validar.html" class="newlink">Contactanos</a>
+            </nav>
+        </header>  
+        <!-- fin de la barra de menu -->
+
+        <!-- banner 1:presentacion - inicio sesion-->
+        <section class="banner">
+            <h2>Todo Sobre El Cine</h2>
+            <h3>Elige tus gustos</h3>
+            <a href="#">Inicia Sesion</a>
+        </section>
+        <!-- FIN banner 1:presentacion - inicio sesion-->
+
+        <!-- banner 2:tres articulos top-->
+        <section class="section-2">
+            <a href="#" class="block-izq">
+                <div class="izq-title">
+                    <h2>Un poco de historia</h2>
+                    <h3>Según muchos teóricos, la historia del cine se inicia un 28 de diciembre de 1895, cuando los Hermanos Lumière realizaron la primera proyección pública de su cinematógrafo. Pero, al contrario de lo que muchos piensan, no hubo un solo inventor del cine, sino que es un invento colectivo. Los inicios del cine se caracterizan por la confluencia de varios campos científicos y muchos inventores que contribuyeron la gestación de lo que hoy día conocemos como cine.</h3>
+                </div>
+                <div class="izq-img">
+                    <img src="img/lumiere2.jpg" alt="hermanos lumiere">
+                </div>
+                <p class="izq-parrafo"><spam>Desde su aparicion</spam> en el mundo del entretenimiento, el cine tambien a dado impulso a la industria audiovisual desde peliculas, series y videos musicales.</p>
+            </a>
+
+            <aside class="block-der">
+                <div class="der-title">
+                    <h3>Cinematografia y mas</h3>
+                </div>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/argentina.jpg" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Argentina</h4>
+                        <p> La historia de la industria nacional. Como fue cambiando hasta nuestros dias.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/bollywood.webp" alt="bollywood">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Bollywood, aquella fabrica misteriosa del cine mundial</h4>
+                        <p> Hace mas peliculas que Hollywood pero es muy poco conocida en Occidente. ¿como es esa fabrica de sueños del otro lado del Atlantico?</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/anime.jpg" alt="trivia">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Anime vs live action</h4>
+                        <p> En Japon, el anime es mas importante que el live action. </p>   
+                    </div>
+                </a>
+               
+            </aside>
+        </section>
+        <!--FIN banner 2:tres articulos top-->
+
+        <!-- banner 3:carrusel-->
+        <section class="carrusel-box">
+            <h3>Explora el cine en distinas regiones del mundo</h3>
+            <div class="carrusel">
+                <img src="img/americadelnorte.jpg" alt="americadelnorte" class="element">
+                <img src="img/latinoamerica.jpg" alt="latinoamerica" class="element">
+                <img src="img/europeo.jpg" alt="europeo" class="element">
+                <img src="img/africa.jpg" alt="africa" class="element">
+                <img src="img/medio oriente.jpg" alt="mediooriente" class="element">
+                <img src="img/india.jpg" alt="india" class="element">
+                <img src="img/china.jpeg" alt="china" class="element">
+                <img src="img/sudesteasia.jpg" alt="sudesteasia" class="element">
+                <img src="img/lejanooriente.jpeg" alt="lejanooriente" class="element">
+                <img src="img/australia.jpg" alt="australia" class="element">
+                <img src="img/nuevazelanda.jpg" alt="nuevazelanda" class="element">
+            </div>
+        </section>
+        <!-- fin banner 3:carrusel-->
+
+        <!-- banner 4-->
+        <section>
+            <aside class="block-der">
+                <div class="der-title">
+                    <h3>No te pierdas</h3>
+                </div>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/halloween.jpg" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Especial Halloween</h4>
+                        <p>Como todos los años, no puede faltar el dedicado mes al terror.</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/huelga.webp" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>Huelga en la meca del cine.</h4>
+                        <p>El avance de la IA pone (sorprendentemente) en jaque a la industria del cine. ¿Solo a los guionistas? ¿Que influencia trae a otras partes del mundo la huelga?</p>
+                    </div>
+                </a>
+                <a href="#" class="der-noticia">
+                    <div class="notcia-img">
+                        <img src="img/findelcine.jpg" alt="comida-salud">
+                    </div>
+                    <div class="notcia-parrafo">
+                        <h4>¿El fin del cine?</h4>
+                        <p>Seguramente el entretenimiento audiovisual no desaparecera pero hace tiempo que las salas de cine no son redituables. ¿Afecta la calidad de contenido los servicios streaming junto al aumento de oferta de cine de todo el mundo?</p>
+                    </div>
+                </a>
+            </aside>
+        </section>
+        <!-- fin banner 4 -->
+        <section>
+            <div class="youtube">
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/sG-H_b7a-NA?si=qiutbhbShL74w35a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/HlgUDrzwNjE?si=ywbFTxuET6PgHL5q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/MnQKqtWT6nM?si=XdWh_Grk6CaegdzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            </section>
+            <!-- footer -->
+            <footer>     
+                <div class="footerop">
+                    <p>Diseñado por team Melocotón - Comisión 23450</p>
+                    <p>Seguinos en las redes </p>
+                    <a href="https://www.instagram.com/" class='bx bxl-instagram  bx-md'></a>
+                    <a href="https://www.facebook.com/?locale=es_LA" class='bx bxl-facebook-circle  bx-md'></a>
+                    <a href="https://twitter.com/?lang=es" class='bx bxl-twitter  bx-md'></a>
+                    <a href="mailto:melocoton1983@gmail.com" class='bx bx-envelope  bx-md'></a>
+                    <p> Derechos reservados 2023</p>
+                </div>
+            </footer>
+    </body>
+
+</html>
