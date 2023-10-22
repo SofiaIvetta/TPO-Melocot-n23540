@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+}
+
+.header-he{
+    height: 4.5rem;
+    width: 100vw;
+    background-color: #333;
+    box-shadow: 0 3px 20px rgba(52, 39, 39, 0.2);
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+  
+/*estilo logo e img*/
+.logo{
+    padding:1vh 1vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img {
+    height: 3rem;
+    width: 3rem;
+}
+h1 {
+    color: white;
+    font-size:26px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+  
+/*estilo de acceso a las otras paginas*/
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 2.7vw;
+    justify-content: right;
+    align-items: center;
+    text-transform: uppercase;
+}
+.nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: #f2f5f7;
+}
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+.nav-links li {
+    position: relative;
+}
+.nav-links li a:hover::before{
+    width: 80%;
+}
+  
+/*estilo del boton iniciar sesion*/
+.login-button{
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #f2f5f7;
+}
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+.join-button{
+    color: #131418;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border:1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+  
+/*estilo del boton menu */
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+.hamburger{
+    display: none;
+}
+
+
+/* presentacion de la pagina */
+.mixed {
+    position: relative;
+    width: auto;
+    height: 600px; /* Altura máxima de 400px */
+    overflow: hidden;
+    text-align: center; /* Alinear contenido al centro horizontalmente */
+}
+.mixed img {
+    width: 100%; /* Ocupar toda la pantalla de ancho */
+    height: auto; /* Mantener la proporción original de la imagen */
+}
+.mixed h2 {
+    position: absolute;
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar en el medio */
+    text-align: center; /* Alinear texto al centro */
+    color: black; /* Color de texto */
+    z-index: 1; /* Colocar encima de la imagen */
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    font-size: 36px; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+.mixed h2 {
+    top: 25%; /* Ajustar la posición vertical de h1 */
+}
+
+
+
+/* inicia elementos al scrollear */
+.carrusel-water {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.elemen-fire {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    background-color: red;
+    width: 600px;
+    height: 600px;
+    position: relative; /* Necesario para el posicionamiento del título */
+}
+.terra {
+    width: 100%;
+    height: 100%;
+}
+.image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el título */
+    color: #fff; /* Color del texto del título */
+    padding: 10px; /* Espaciado alrededor del texto */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+
+/* blok de presentacion sobre nosotros */
+.nosotros h3{
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.slider {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 960px;
+    height: 350px;
+    margin: 50px auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.slider-controls {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    text-align: center;
+    transform: translatex(-50%);
+    z-index: 1000;
+  
+    list-style: none;
+    text-align: center;
+}
+.slider input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider-controls label {
+    display: inline-block;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.2s linear;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
+    background-color: aqua;
+}
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+    background-color: aqua;
+}
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: aqua;
+}
+#btn-4:checked ~ .slider-controls label[for="btn-4"] {
+    background-color: aqua;
+}
+  
+/* SLIDES */
+.slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  
+    opacity: 0;
+    transform: translatex(-100%);
+    transition: transform 250ms linear;
+}
+.slide-content {
+    width: 400px;
+}
+.slide-title {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.slide-text {
+    margin-bottom: 20px;
+}
+.slide-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    background-color: #ff4081;
+}
+.slide-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+  
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    transform: translatex(0);
+    opacity: 1;
+} 
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    transform: translatex(0);
+    opacity: 1;
+}
+#btn-4:checked ~ .slides .slide:nth-child(4) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+#btn-4:not(:checked) ~ .slides .slide:nth-child(4) {
+    animation-name: swap-out;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+}
+  
+@keyframes swap-out {
+    0% {
+      transform: translatex(0);
+      opacity: 1;
+    }
+  
+    50% {
+      transform: translatex(50%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translatex(100%);
+    }
+}
+
+/* inicia el footer */
+.footerop {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.footerop a:link {
+    color: black;
+}
+.footerop a:hover {
+    color: aqua;
+}
+.footerop a:visited {
+    color: black;
+}
+.footerop a:hover:visited {
+    color: aqua;
+}
+
+
+/* aca esta el responsive */
+@media screen and (max-width: 950px) {
+    .slider {
+        width: 80%; /* Reducir el ancho del slider */
+        height: 300px;
+    }
+    .slide-content {
+        width: 100%; /* Asegurarse de que el contenido de la diapositiva se ajuste correctamente */
+    }
+    .slide-image {
+        display: none; /* Ocultar la imagen cuando el ancho de la pantalla sea igual o menor a 850px */
+    }
+
+
+    .mixed {
+        height: 400px; /* Reducir la altura para pantallas más pequeñas */
+    }
+    .mixed h1 {
+        top: 25%; /* Ajustar la posición vertical de h1 para pantallas más pequeñas */
+    }
+
+
+    .header-he{
+        position: relative;
+        z-index: 3;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #333;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;  
+        justify-content: space-evenly;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+        
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.8s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+    /*---animacion al hacerle click al boton del menu*/
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .toggle .line2{
+        transition: all 0.6s ease;
+        width:0;
+    }
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    .element {
+        min-width: 50%; /* Cambiar el ancho mínimo cuando la pantalla sea más pequeña que 950px */
+    }
+
+    .elemen-fire {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+
+/* Estilos para 600px */
+@media screen and (max-width: 550px) {
+    .slider {
+        width: 100%; /* Hacer que el slider ocupe todo el ancho de la pantalla */
+        height: 400px;
+    }
+    .slider-controls {
+        width: 100%; /* Ajustar los controles del slider al ancho de la pantalla */
+    }
+    .slider-controls label {
+        width: 15px; /* Reducir el tamaño de los botones de control */
+        height: 15px;
+    }
+    .slide-content {
+        width: 100%; /* Asegurarse de que el contenido de la diapositiva se ajuste correctamente */
+    }
+    .slide-title {
+        font-size: 24px; /* Reducir el tamaño del título de la diapositiva */
+    }
+    .slide-text {
+        font-size: 16px; /* Reducir el tamaño del texto de la diapositiva */
+    }
+    .slide-link {
+        padding: 8px 16px; /* Reducir el espacio alrededor del enlace */
+    }
+    .slide-image img {
+        display: none;
+    }
+
+    .mixed {
+        height: 300px; /* Reducir la altura aún más para pantallas más pequeñas */
+    }
+    .mixed h1 {
+        top: 20%; /* Ajustar la posición vertical de h1 para pantallas más pequeñas */
+    }
+    .mixed h1, .mixed h2 {
+        font-size: 24px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ajustar la sombra de texto para pantallas más pequeñas */
+    }
+    
+    .elemen-fire {
+        width: 250px;
+        height: 250px;
+        margin: 0 5px; /* Reducir el margen para un mejor ajuste en pantallas pequeñas */
+    }
+    .image-title {
+        font-size: 12px; /* Reducir el tamaño de fuente del título en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width:300px) {
+    .slider {
+        width: 100%; /* Hacer que el slider ocupe todo el ancho de la pantalla */
+        height: 500px;
+    }
+}
