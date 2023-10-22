@@ -1,66 +1,153 @@
 <!DOCTYPE html>
-<html lang="es">
-<!-- hola -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--description de lo que apaeceria en el buscador del navegador-->
     <meta name="description" content="proyecto de html y css">
     <meta name="keywords" content="HTML, CSS, página web">
-    <meta name="author" content="Equipo fullstackeros">
-
-    <!-- Enlace a una hoja de estilos CSS externa -->
-    <link rel="stylesheet" href="css/style-basic.css">
-
-    <!-- Enlace a un archivo de icono (favicon) -->
+    <meta name="author" content="Team Melocotón"> 
+    
+    
     <link rel="icon" href="img/Icons y mas/ico-title.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Título de la página en la pestaña del navegador -->
+    
+    
+    <link rel="stylesheet" href="css/style.css">
     <title>Ticket Show</title>
-
+    
 </head>
-
 <body>
-    <!-- barra de menu -->
-    <header class="header-cabeza">
-        <a href="index.html" class="logo">
-            <img src="img/Icons y mas/ico-title.png" alt="logo" class="logo-img">
+    <!-- barra menu -->
+    <header>
+        <nav class="header-he">
+            <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="ico-title">
             <h1>TicketShow</h1>
-        </a>
-        <!-- Agrega el ícono de menú para dispositivos móviles -->
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav class="joy">
-            <a href="#      " class="newlink">Cine</a>
-            <a href="teatro.html" class="newlink">Teatro</a>
-            <a href="eventos.html" class="newlink">Eventos</a>
-            <a href="deporte.html" class="newlink">Deporte</a>
-            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
-            <a href="validar.html" class="newlink">Contactanos</a>
+            </a>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="teatro.html">Teatro</a></li>
+                <li><a href="deporte.html">Deporte</a></li>
+                <li><a href="validar.html">Contactanos</a></li>
+                <li><button class="login-button" href="https://www.web-leb.com/code">Iniciar Sesion</button></li>
+            </ul>
         </nav>
     </header>
+    
+    <!-- inicia presentacion -->
+    <div class="mixed">
+        <img src="img/Icons y mas/presentacion.jpg" alt="descubrete">
+        <h2>Descubre tu pasion</h2>
+    </div>
+    
+    <!-- cuerpo intermedio -->
+    <div class="carrusel-water">
+        <div class="elemen-fire">
+            <a href="eventos.html" class="image-link">
+                <img src="img/Icons y mas/pres1.jpg" alt="" class="terra">
+                <div class="image-title">Eventos</div>
+            </a>
+        </div>
+        <div class="elemen-fire">
+            <a href="cinema.html" class="image-link">
+                <img src="img/Icons y mas/pres2.jpg" alt="" class="terra">
+                <div class="image-title">Cine</div>
+            </a>
+        </div>
+        <div class="elemen-fire">
+            <a href="Teatro.html" class="image-link">
+                <img src="img/Icons y mas/pres3.jpg" alt="" class="terra">
+                <div class="image-title">Teatro</div>
+            </a>
+        </div>
+        <div class="elemen-fire">
+            <a href="Deporte.html" class="image-link">
+                <img src="img/Icons y mas/pres4.webp" alt="" class="terra">
+                <div class="image-title">Deporte</div>
+            </a>
+        </div>
+    </div>
 
-    <main class="container">
-
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure fugit in facere hic ipsum nostrum dignissimos
-            tempore corporis iusto tempora? Commodi eaque sed doloremque facere harum ipsum odit dolorem quod.</p>
-
-
-
-    </main>
+    <!-- sobre nosotros -->
+    <div class="nosotros">
+        <!-- paleta sobre nosotros -->
+        <h3>Sobre Nosotros</h3>
+        <div class="slider">
+            <input type="radio" name="toggle" id="btn-1" checked>
+            <input type="radio" name="toggle" id="btn-2">
+            <input type="radio" name="toggle" id="btn-3">
+            <input type="radio" name="toggle" id="btn-4">
+          
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+              <label for="btn-4"></label>
+            </div>
+          
+            <ul class="slides">
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Sofia</h2>
+                       <p class="slide-text">Mi nombre es Sofía. Soy cordobesa, licenciada en administración. Amo cocinar,las
+                        mascotas y andar en bici por las tardes.Estoy incursionando en el mundo de la
+                        programación desde abril de 2023.En mí encontrarán el espíritu femenino del team
+                        Melocotón. Creadora de la sección:</p>
+                      <a href="teatro.html" class="slide-link">Teatro</a>
+                    </div>
+                       <p class="slide-image">
+                       <img src="img/Icons y mas/Sofi.jpeg" alt="stuff">
+                    </p>
+                </li>
+    
+                <li class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-title">Julian</h2>
+                        <p class="slide-text">Hola.Mi nombre es Julián.Soy analista de sistemas y tester QA. Ademas me estoy
+                            desarrollando en desarrollo web full stack con Python. Pero esto es el
+                            comienzo.Soy el creador de la sección:</p>
+                        <a href="cinema.html" class="slide-link">Cinema</a>
+                    </div>
+                        <p class="slide-image">
+                        <img src="img/Icons y mas/Julián.jpeg" alt="stuff">
+                    </p>
+                </li>
+    
+                <li class="slide">
+                    <div class="slide-content">
+                      <h2 class="slide-title">Fabricio</h2>
+                       <p class="slide-text">Soy Fabricio, estudiante en ingeniería, me gustan los videojuegos, programar y andar
+                        en skate. El mundo de la programación me fascina y estoy empezando en este curso,
+                        pero tengo planeado expandirme aun más</p>
+                      <a href="eventos.html" class="slide-link">Eventos</a>
+                    </div>
+                      <p class="slide-image">
+                      <img src="img/Icons y mas/Fabri.jpeg" alt="stuff">
+                    </p>
+                </li>
+    
+                <li class="slide">
+                    <div class="slide-content">
+                      <h2 class="slide-title">Maxi</h2>
+                      <p class="slide-text">Hola, soy Maxi. Estudiante de programación y apasionado por la tecnología. Me encanta aprender y compartir mis conocimientos. Estoy emocionado por formar parte de este equipo.</p>
+                       <a href="deporte.html" class="slide-link">Deporte</a>
+                    </div>
+                       <p class="slide-image">
+                       <img src="img/Icons y mas/Maxi.jpeg" alt="stuff" width="320" height="240">
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -75,18 +162,8 @@
         </div>
     </footer>
 
-    <!-- script de la barra de navegacion -->
-    <script>
-        // JavaScript para mostrar/ocultar la navegación y el botón de cierre
-        const menuIcon = document.querySelector('.menu-icon');
-        const joyNav = document.querySelector('.joy');
-
-        menuIcon.addEventListener('click', () => {
-            joyNav.classList.toggle('show-nav');
-            closeButton.classList.toggle('show-button'); // Mostrar el botón de cierre
-        });
-
-    </script>
+    <!-- enlace del js -->
+    <script src="script-inmde.js"></script>
+    
 </body>
-
 </html>

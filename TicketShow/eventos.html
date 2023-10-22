@@ -28,28 +28,28 @@
 </head>
 
 <body>
-
-    <!-- barra de menu -->
-    <header class="header-cabeza">
-        <a href="index.html" class="logo">
-            <img src="img/Icons y mas/ico-title.png" alt="logo" class="logo-img">
-            <h1>Ticket Show</h1>
-        </a>
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav class="joy">
-            <a href="index.html" class="newlink">Inicio</a>
-            <a href="deporte.html" class="newlink">Deportes</a>
-            <a href="cinema.html" class="newlink">Cine</a>
-            <a href="teatro.html" class="newlink">Teatro</a>
-            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
-            <a href="validar.html" class="newlink">Contactanos</a>
+    <!-- barra menu -->
+    <header>
+        <nav class="header-he">
+            <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="ico-title">
+            <h1>TicketShow</h1>
+            </a>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="teatro.html">Teatro</a></li>
+                <li><a href="deporte.html">deporte</a></li>
+                <li><a href="validar.html">Contactanos</a></li>
+            </ul>
         </nav>
     </header>
+    <!-- fin de la barra de menu -->
     <!-- presentacion - inicio sesion-->
 
     <section class="banner">
@@ -197,15 +197,7 @@
         </div>
     </footer>
     <!-- script de la barra de navegacion -->
-    <script>
-        // JavaScript para mostrar/ocultar la navegación y el botón de cierre
-        const menuIcon = document.querySelector('.menu-icon');
-        const joyNav = document.querySelector('.joy');
-
-        menuIcon.addEventListener('click', () => {
-            joyNav.classList.toggle('show-nav');
-        });
-    </script>
+    <script src="script-inmde.js"></script>
 
 </body>
 

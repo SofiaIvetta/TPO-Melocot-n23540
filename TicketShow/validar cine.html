@@ -6,7 +6,7 @@
     <title>Ticket Show</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-cinema.css">
+    <link rel="stylesheet" href="css/style-cinema.css">
     <link rel="icon" href="img/ico-title.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,20 +17,27 @@
    
 </head>
 <body>
-    <header class="header-cabeza">
-        <a href="#" class="logo">
-            <img src="img/ico-title.png" alt="logo" class="logo-img">
-           <p><h1>TicketShow</h1></p>
-        </a>
-        <div>
-        <nav class="joy">
-            <a href="#" class="newlink">Inicio</a>
-            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
-            <a href="opiniones.html" class="newlink">Opiniones y más</a>
-            <a href="validar.html" class="newlink">Contactanos</a>
+    <!-- barra menu -->
+    <header>
+        <nav class="header-he">
+            <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="ico-title">
+            <h1>TicketShow</h1>
+            </a>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="opiniones.html">Opiniones y más</a></li>
+                <li><a href="validar.html">Contactanos</a></li>
+            </ul>
         </nav>
-        </div>
-    </header>  
+    </header>
+    <!-- fin de la barra de menu -->
 
     <div class="formulario" id="formulario"></div>
     <h3><center><b>Formulario de Contacto</b></center></h3>
@@ -63,6 +70,7 @@
     </footer>  
    
     <script src="validar.js"></script>
+    <script src="script-inmde.js"></script>
 
 </body>
 </html>

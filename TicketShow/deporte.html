@@ -1,56 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--description de lo que apaeceria en el buscador del navegador-->
     <meta name="description" content="proyecto de html y css">
     <meta name="keywords" content="HTML, CSS, página web">
-    <meta name="author" content="Equipo fullstackeros">
-
-    <!-- Enlace a una hoja de estilos CSS externa -->
-    <link rel="stylesheet" href="css/style-basic.css">
-    <link rel="stylesheet" href="css/style-deport.css">
-
-    <!-- Enlace a un archivo de icono (favicon) -->
-    <link rel="icon" href="img/Icons y mas/ico-title.png" type="image/x-icon">
+    <meta name="author" content="Team Melocotón"> 
+    
+    
+    <link rel="icon" href="/img/Icons y mas/ico-title.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Crimson+Text:wght@700&family=Fjalla+One&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <!-- Título de la página en la pestaña del navegador -->
+    
+    
+    <link rel="stylesheet" href="css/style-deport.css">
     <title>Ticket Show</title>
-
+    
 </head>
 
 <body>
-    <!-- barra de menu -->
-    <header class="header-cabeza">
-        <a href="index.html" class="logo">
-            <img src="img/Icons y mas/ico-title.png" alt="logo" class="logo-img">
+    <!-- barra menu -->
+    <header>
+        <nav class="header-he">
+            <a href="index.html" class="logo">
+            <img src="img/Icons y mas/ico-title.png" alt="ico-title">
             <h1>TicketShow</h1>
-        </a>
-        <!-- Agrega el ícono de menú para dispositivos móviles -->
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <nav class="joy">
-            <a href="index.html" class="newlink">Inicio</a>
-            <a href="eventos.html" class="newlink">Eventos</a>
-            <a href="cinema.html" class="newlink">Cine</a>
-            <a href="teatro.html" class="newlink">Teatro</a>
-            <a href="sobrenosotros.html" class="newlink">Sobre Nosotros</a>
-            <a href="validar.html" class="newlink">Contactanos</a>
+            </a>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cinema.html">Cinema</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="teatro.html">Teatro</a></li>
+                <li><a href="validar.html">Contactanos</a></li>
+            </ul>
         </nav>
     </header>
     <!-- fin de la barra de menu -->
@@ -210,16 +199,8 @@
         </div>
     </footer>
 
-    <!-- script de la barra de navegacion -->
-    <script>
-        // JavaScript para mostrar/ocultar la navegación y el botón de cierre
-        const menuIcon = document.querySelector('.menu-icon');
-        const joyNav = document.querySelector('.joy');
-
-        menuIcon.addEventListener('click', () => {
-            joyNav.classList.toggle('show-nav');
-        });
-    </script>
+    <!-- enlace del js -->
+    <script src="script-inmde.js"></script>
 </body>
 
 </html>
