@@ -364,7 +364,9 @@ h1 {
 .footerop a:hover:visited {
     color: aqua;
 }
-
+a {
+    text-decoration: none;
+}
 
 /* aca esta el responsive */
 @media screen and (max-width: 950px) {
