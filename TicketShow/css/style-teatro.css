@@ -10,7 +10,7 @@ body {
 .header-he{
     height: 4.5rem;
     width: 100vw;
-    background-color: #333;
+    background-color: rgb(240, 192, 36);
     box-shadow: 0 3px 20px rgba(52, 39, 39, 0.2);
     display: flex;
     position: relative;
