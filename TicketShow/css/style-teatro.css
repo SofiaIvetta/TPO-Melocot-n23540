@@ -394,7 +394,9 @@ h1 {
 .footerop a:hover:visited {
     color: orange;
 }
-
+a {
+    text-decoration: none;
+}
 
 /* Estilo para ir a otra pagina */
 
