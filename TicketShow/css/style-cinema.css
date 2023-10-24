@@ -452,7 +452,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color:orangered;
 }
-
+a {
+    text-decoration: none;
+}
 /*FIN footer */
 
 /*para el cel que desaparezca el yutube*/
