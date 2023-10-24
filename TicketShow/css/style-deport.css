@@ -320,6 +320,9 @@ h1 {
 .footerop a:hover:visited {
     color: aqua;
 }
+a {
+    text-decoration: none;
+}
 
 
 @media (max-width: 950px) {
