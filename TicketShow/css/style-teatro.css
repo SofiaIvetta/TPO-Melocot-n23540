@@ -358,13 +358,14 @@ h1 {
 }
 
 /* fin banner 3 carrusel */
+
+.youtube{
+    text-align: center;
+    justify-content: center;
+}
+
 /* inicia footer */
 
-.youtube {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
 
 
 .footerop {
@@ -524,50 +525,86 @@ input[type="submit"]:hover {
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
-}
-@media (min-width: 200px) and (max-width:390px) {
+
     .banner {
-        width: auto;
-        height: 15%;
+        min-height: 50px;
+        /* Ajusta la altura del banner */
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        /* Ajusta el tamaño del título */
     }
 
     .banner h2 {
-        font-size: 20px;
+        font-size: 24px;
+        /* Ajusta el tamaño del subtítulo */
     }
-
-    .banner h3 {
-        font-size: 15px;
-    }
-
 
     .banner a {
-        width: 100px;
-        height: 50px;
-        border-radius: 30px;
-        font-size: 15px;
-        margin-top: 55px;
-        margin-bottom: 10px;
+        margin-top: 30px;
+        /* Ajusta el margen superior del botón */
     }
 
     .section-2 {
-        display: none;
+        flex-direction: column;
+        /* Cambia la dirección de los elementos */
     }
 
-    .notcia-parrafo {
-        display: none;
-
+    .block-izq {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px;
+        /* Agrega espacio entre los bloques */
     }
 
+    .nav-arrows {
+        display: none;
+        /* Oculta las flechas por defecto */
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    /* carrusel */
     .carrusel {
+        width: auto;
         height: 250px;
     }
 
-    .youtube {
-        display: inline-block;
-    }
-
-    .carrusel-box {
-        font-size: 1em;
+    .element:hover {
+        width: 250px;
     }
 
 }
+
+@media (max-width: 600px) {
+    .banner {
+        min-height: 40px;
+        /* Ajusta la altura del banner */
+    }
+
+    .banner h1 {
+        font-size: 32px;
+        /* Ajusta el tamaño del título */
+    }
+
+    .banner h2 {
+        font-size: 18px;
+        /* Ajusta el tamaño del subtítulo */
+    }
+
+    .banner a {
+        margin-top: 20px;
+        /* Ajusta el margen superior del botón */
+        font-size: 16px;
+        /* Ajusta el tamaño del texto del botón */
+    }
+
+    .der-noticia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+}
+
