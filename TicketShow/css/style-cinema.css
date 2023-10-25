@@ -542,9 +542,38 @@ a {
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
+
+    .section-2 {
+        flex-direction: column;
+        /* Cambia la dirección de los elementos */
+    }
+
+    .block-izq {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px;
+        /* Agrega espacio entre los bloques */
+    }
+
+    .nav-arrows {
+        display: none;
+        /* Oculta las flechas por defecto */
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    /* carrusel */
+    .carrusel {
+        width: auto;
+        height: 250px;
+    }
+
+    .element:hover {
+        width: 250px;
+    }
 }
 /*para el celu Iphone 12 pro 390px*/
-@media (min-width: 200px) and (max-width:390px) {
+@media (min-width: 200px) and (max-width:490px) {
 .banner{
     width: auto;
     height: 15%;
@@ -573,7 +602,12 @@ a {
 }    
 .notcia-parrafo{
     display:none;
-
+}
+.der-noticia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 .carrusel {
     height: 250px;
