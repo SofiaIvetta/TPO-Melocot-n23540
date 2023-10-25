@@ -4,6 +4,9 @@ body {
     background-color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
 }
 
 /* titulo y barra de navegacion*/
