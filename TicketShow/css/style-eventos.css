@@ -200,6 +200,9 @@
      justify-content: center;
      align-items: center;
      color: rgb(255, 255, 255);
+    /*font-family: 'Arvo', serif;*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Fjalla One', sans-serif;
  }
 
  .banner a {
