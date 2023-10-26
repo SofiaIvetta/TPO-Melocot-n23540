@@ -155,6 +155,9 @@ body {
     justify-content: center;
     align-items: center;
     color: #800080;
+    /*font-family: 'Arvo', serif;*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .banner h2 {
