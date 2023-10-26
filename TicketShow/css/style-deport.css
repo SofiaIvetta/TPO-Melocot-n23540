@@ -119,6 +119,9 @@ h1 {
     justify-content: center;
     align-items: center;
     color: black;
+    /*font-family: 'Arvo', serif;*/
+    /*font-family: 'Crimson Text', serif;*/
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .bannere h1 {
