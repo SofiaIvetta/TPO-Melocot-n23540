@@ -1,4 +1,4 @@
- body {
+  body {
 
      margin: 0;
      padding: 0;
@@ -8,608 +8,739 @@
      font-size: 16px;
      line-height: 1.5;
      overflow-x: hidden;
+     position: relative;
  }
 
-ul {
-    list-style-type: none;
-    color: #ff0062;
-}
 
-ul:visited {
-    list-style-type: none;
-    color: #880034;
-}
+ ul {
+     list-style-type: none;
+     color: #ff0062;
+ }
 
-a {
-    text-decoration: none;
-}
-.separador{
-    background-color: #b80046;
-    width: 100%;
-    height: 4px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+ ul:visited {
+     list-style-type: none;
+     color: #880034;
+ }
 
-}
-/* titulo y barra de navegacion*/
-.header-he{
-    height: 4.5rem;
-    width: 100vw;
-    background-color: #ff006a;
-    box-shadow: 0 3px 20px rgba(52, 39, 39, 0.2);
-    display: flex;
-    position: relative;
-    z-index: 10;
-}
-/* Mostrar la navegación en el menú desplegable */
-/* Mostrar la navegación en el menú desplegable */
-.show-nav {
-    display: flex !important;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #333333;
-    width: 100%;
-    z-index: 1;
-    background-color: #ff006a;
-}
-/*estilo logo e img*/
-.logo{
-    padding:1vh 1vw;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    text-decoration: none;
-}
-.logo img {
-    height: 3rem;
-    width: 3rem;
-}
-h1 {
-    color: white;
-    font-size:26px;
-    font-weight:bold;
-    letter-spacing: 1px;
-    margin-left: 20px;
-}
-  
-/*estilo de acceso a las otras paginas*/
-.nav-links{
-    display: flex;
-    list-style: none; 
-    width: 88vw;
-    padding: 0 2.7vw;
-    justify-content: right;
-    align-items: center;
-    text-transform: uppercase;
-}
-.nav-links li a{
-    text-decoration: none;
-    margin: 0 0.7vw;
-    color: #f2f5f7;
-}
-.nav-links li a:hover {
-    color: #61DAFB;
-}
-.nav-links li {
-    position: relative;
-}
-.nav-links li a:hover::before{
-    width: 80%;
-}
-  
-/*estilo del boton iniciar sesion*/
-.login-button{
-    background-color: transparent;
-    border: 1.5px solid #f2f5f7;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    margin-left: 2vw;
-    font-size: 1rem;
-    cursor: pointer;
-    color: #f2f5f7;
-}
-.login-button:hover {
-    color: #131418;
-    background-color: #f2f5f7;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-.join-button{
-    color: #131418;
-    border: 1.5px solid #61DAFB;
-    border-radius: 2em;
-    padding: 0.6rem 0.8rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-.join-button:hover {
-    color: #f2f5f7;
-    background-color: transparent;
-    border:1.5px solid #f2f5f7;
-    transition: all ease-in-out 350ms;
-}
-  
-/*estilo del boton menu */
-.hamburger div{
-    width: 30px;
-    height:3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-.hamburger{
-    display: none;
-}
-.nav-links{
-    display: flex;
-    list-style: none; 
-    width: 88vw;
-    padding: 0 2.7vw;
-    justify-content: right;
-    align-items: center;
-    text-transform: uppercase;
-}
-.nav-links li a{
-    text-decoration: none;
-    margin: 0 0.7vw;
-    color: #f2f5f7;
-}
-.nav-links li a:hover {
-    color: #61DAFB;
-}
-.nav-links li {
-    position: relative;
-}
-.nav-links li a:hover::before{
-    width: 80%;
-}
+ a {
+     text-decoration: none;
+ }
 
-/* banner - presentacion - inicio sesion */
+ .separador {
+     background-color: #b80046;
+     width: 100%;
+     height: 4px;
+     margin-top: 100px;
+     margin-bottom: 100px;
 
-.banner {
-    min-height: 40px;
-    background-image: url(../img/Eventos/fiesta-fondo.webp);
-    background-position: center;
-    width: auto;
-    height: calc(100vh - 100px);
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-}
+ }
 
-.banner a {
-    background-color: #ff006a;
-    color: rgb(255, 255, 255);
-    width: 180px;
-    height: 60px;
-    border-radius: 40px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    margin-top: 4px;
-}
+ /* titulo y barra de navegacion*/
+ .header-he {
+     height: 4.5rem;
+     width: 100vw;
+     background-color: #ff006a;
+     box-shadow: 0 3px 20px rgba(52, 39, 39, 0.2);
+     display: flex;
+     position: relative;
+     z-index: 10;
+ }
 
-.banner a:hover {
-    background-color: #b80046;
-    color: #ffffff;
-}
+ /* Mostrar la navegación en el menú desplegable */
+ .show-nav {
+     display: flex !important;
+     flex-direction: column;
+     text-align: center;
+     position: absolute;
+     top: 70px;
+     right: 0;
+     background-color: #333333;
+     width: 100%;
+     z-index: 1;
+     background-color: #ff006a;
+ }
 
+ /*estilo logo e img*/
+ .logo {
+     padding: 1vh 1vw;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     text-decoration: none;
+ }
 
-/*carrusel*/
+ .logo img {
+     height: 3rem;
+     width: 3rem;
+ }
 
-.carrusel-box {
-    color: white;
-    display: flow-root;
-    background-color: #ff0062c5;
-    text-align: center;
-    padding: 0;
-}
+ h1 {
+     color: white;
+     font-size: 26px;
+     font-weight: bold;
+     letter-spacing: 1px;
+     margin-left: 20px;
+ }
 
-.carrusel {
-    display: flex;
-    width: auto;
-    height: 700px;
-}
+ /*estilo de acceso a las otras paginas*/
+ .nav-links {
+     display: flex;
+     list-style: none;
+     width: 88vw;
+     padding: 0 2.7vw;
+     justify-content: right;
+     align-items: center;
+     text-transform: uppercase;
+ }
 
-.concierto {
-    background-image: url(../img/Eventos/concierto.jpg);
-    background-size: cover;
-    background-position: center;
-    border: 0;
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .40;
-    transition: .4s ease;
-}
+ .nav-links li a {
+     text-decoration: none;
+     margin: 0 0.7vw;
+     color: #f2f5f7;
+ }
 
-.concierto:hover {
-    width: 700px;
-    opacity: 1;
-    filter: contrast(150%);
-}
-.seccion-concierto{
-        display: grid;
-        grid-template-rows: auto auto ;
-        text-align: justify;
-        justify-content: center;
-        gap:4rem;
-        grid-auto-rows: 22rem;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-        margin-inline-start: auto;
+ .nav-links li a:hover {
+     color: #61DAFB;
+ }
 
-}
+ .nav-links li {
+     position: relative;
+ }
 
-.img-conciertogrid{
-    background-image: url(../img/Eventos/concierto-seccion.webp);
-    background-size: cover;
-    background-position: center;
-    width: 100%;    
-    border-radius: 4%;
-    gap: 10%;
-}
-.list-boxconcierto{
-    display: grid;
-    gap:4rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    margin-inline-start: auto;
-    margin-bottom: 100px;
-}
+ .nav-links li a:hover::before {
+     width: 80%;
+ }
 
-.tabla-tipos{
-    grid-column: 1/3;
-    
-}
-.img-chiesa{
-    width: 100%;
-    margin-top: 24px;
-    border-radius: 4%;
-    justify-content: center;
+ /*estilo del boton iniciar sesion*/
+ .login-button {
+     background-color: transparent;
+     border: 1.5px solid #f2f5f7;
+     border-radius: 2em;
+     padding: 0.6rem 0.8rem;
+     margin-left: 2vw;
+     font-size: 1rem;
+     cursor: pointer;
+     color: #f2f5f7;
+ }
 
-}
-.img-grosso{
-    width: 100%;
-    margin-top: 24px;
-    border-radius: 4%;
-    justify-content: center;
+ .login-button:hover {
+     color: #131418;
+     background-color: #f2f5f7;
+     border: 1.5px solid #f2f5f7;
+     transition: all ease-in-out 350ms;
+ }
 
-}
-.img-solista{
-    width: 100%;
-    margin-top: 24px;
-    border-radius: 4%;
-    justify-content: center;
+ .join-button {
+     color: #131418;
+     border: 1.5px solid #61DAFB;
+     border-radius: 2em;
+     padding: 0.6rem 0.8rem;
+     font-size: 1rem;
+     cursor: pointer;
+ }
 
-}
-/*Circo*/
+ .join-button:hover {
+     color: #f2f5f7;
+     background-color: transparent;
+     border: 1.5px solid #f2f5f7;
+     transition: all ease-in-out 350ms;
+ }
 
-.circo {
-    background-image: url(../img/Eventos/circo-fondo.jpg    );
-    background-size: cover;
-    background-position: center;
-    border: 0;
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .40;
-    transition: .4s ease;
-}
+ /*estilo del boton menu */
 
-.circo:hover {
-    width: 700px;
-    opacity: 1;
-    filter: contrast(150%);
-}
+ .nav-links {
+     display: flex;
+     list-style: none;
+     width: 88vw;
+     padding: 0 2.7vw;
+     justify-content: right;
+     align-items: center;
+     text-transform: uppercase;
+ }
 
-.seccion-circo{
-    display: grid;
-    text-align: justify;
-    justify-content: center;
-    text-decoration: none;
-    list-style-type: none;
-    grid-template-columns: 40% auto;
-    gap: 24px;
-}
+ .nav-links li a {
+     text-decoration: none;
+     margin: 0 0.7vw;
+     color: #f2f5f7;
+ }
 
-.seccion-circoimg {
-    background-image: url(../img/Eventos/circo\ seccion.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    border-radius: 4%;
-}
+ .nav-links li a:hover {
+     color: #61DAFB;
+ }
 
-/* Fin de Circo*/
+ .nav-links li {
+     position: relative;
+ }
 
-.museo {
-    background-image: url(../img/Eventos/museo.jpg);
-    background-size: cover;
-    border: 0;
-    background-position: center;
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .40;
-    transition: .4s ease;
-}
+ .nav-links li a:hover::before {
+     width: 80%;
+ }
 
-.museo:hover {
-    width: 700px;
-    opacity: 1;
-    filter: contrast(150%);
-}
+ /* banner - presentacion - inicio sesion */
 
-.cultura {
-    background-image: url(../img/Eventos/cultura.jpg    );
-    background-position: center;
-    background-size: cover;
-    border: 0;
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .40;
-    transition: .4s ease;
-}
+ .banner {
+     min-height: 40px;
+     background-image: url(../img/Eventos/fiesta-fondo.webp);
+     background-position: center;
+     width: auto;
+     height: calc(100vh - 100px);
+     display: flex;
+     margin: auto;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: rgb(255, 255, 255);
+ }
 
-.cultura:hover {
-    width: 700px;
-    opacity: 1;
-    filter: contrast(150%);
-}
+ .banner a {
+     background-color: #ff006a;
+     color: rgb(255, 255, 255);
+     width: 180px;
+     height: 60px;
+     border-radius: 40px;
+     text-decoration: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     margin-top: 4px;
+ }
 
-.element {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .40;
-    transition: .4s ease;
-}
-
-.element:hover {
-    width: 700px;
-    opacity: 1;
-    filter: contrast(150%);
-}
+ .banner a:hover {
+     background-color: #b80046;
+     color: #ffffff;
+ }
 
 
-/* fin banner 3 carrusel */
-/* inicia footer */
+ /*carrusel*/
 
-footer {
-    background-color: #ff7293;
-    color: #fff;
-    padding: 5px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
-}
+ .carrusel-box {
+     color: white;
+     display: flow-root;
+     background-color: #ff0062c5;
+     text-align: center;
+     padding: 0;
+ }
 
-/* Estilo para ir a otra pagina */
-.links {
-    flex: 1;
-    margin-right: 20px;
-    margin-left: 2%;
-}
+ .carrusel {
+     display: flex;
+     width: auto;
+     height: 700px;
+ }
 
-/* Estilo para los enlaces de redes sociales */
-.redes-sociales {
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-}
+ /*Concierto*/
 
-/*Dezplasamiento hacia el contenido*/
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
+ .concierto {
+     background-image: url(../img/Eventos/concierto.jpg);
+     background-size: cover;
+     background-position: center;
+     border: 0;
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .40;
+     transition: .4s ease;
+ }
 
-nav li {
-    margin: 0 10px;
-}
+ .concierto:hover {
+     width: 700px;
+     opacity: 1;
+     filter: contrast(150%);
+ }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
+ .seccion-concierto {
+     display: grid;
+     grid-template-rows: auto auto;
+     text-align: justify;
+     justify-content: center;
+     gap: 4rem;
+     grid-auto-rows: 22rem;
+     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+     margin-inline-start: auto;
 
-section {
-    padding: 50px;
-}
+ }
 
-/* inicia footer */
+ .img-conciertogrid {
+     background-image: url(../img/Eventos/concierto-seccion.webp);
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     border-radius: 4%;
+     gap: 10%;
+ }
+
+ .list-boxconcierto {
+     display: grid;
+     gap: 4rem;
+     grid-auto-rows: 22rem;
+     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+     margin-inline-start: auto;
+     margin-bottom: 100px;
+ }
+
+ .tabla-tipos {
+     grid-column: 1/3;
+
+ }
+
+ .img-chiesa {
+     width: 100%;
+     margin-top: 24px;
+     border-radius: 4%;
+     justify-content: center;
+
+ }
+
+ .img-grosso {
+     width: 100%;
+     margin-top: 24px;
+     border-radius: 4%;
+     justify-content: center;
+
+ }
+
+ .img-solista {
+     width: 100%;
+     margin-top: 24px;
+     border-radius: 4%;
+     justify-content: center;
+
+ }
+
+ /* Fin de Concierto */
+
+ /*Circo*/
+
+ .circo {
+     background-image: url(../img/Eventos/circo-fondo.jpg    );
+     background-size: cover;
+     background-position: center;
+     border: 0;
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .40;
+     transition: .4s ease;
+ }
+
+ .circo:hover {
+     width: 700px;
+     opacity: 1;
+     filter: contrast(150%);
+ }
+
+ .seccion-circo {
+     display: grid;
+     text-align: justify;
+     justify-content: center;
+     text-decoration: none;
+     list-style-type: none;
+     grid-template-columns: 40% auto;
+     gap: 24px;
+ }
+
+ .seccion-circoimg {
+     background-image: url(../img/Eventos/circo\ seccion.jpg);
+     background-size: cover;
+     background-position: center;
+     width: 100%;
+     border-radius: 4%;
+ }
+
+ /* Fin de Circo*/
+
+ /* Museo*/
+
+ .museo {
+     background-image: url(../img/Eventos/museo.jpg);
+     background-size: cover;
+     border: 0;
+     background-position: center;
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .40;
+     transition: .4s ease;
+ }
+
+ .museo:hover {
+     width: 700px;
+     opacity: 1;
+     filter: contrast(150%);
+ }
+
+ .seccion-museo {
+     display: grid;
+     grid-template-columns: auto 40%;
+     grid-template-rows: auto auto;
+     height: auto;
+     gap: 25px;
+     margin-bottom: 25px;
+
+ }
+
+ .img-museo {
+     background-image: url(../img/Eventos/museoimgaen.png);
+     background-size: cover;
+     background-position: right;
+     width: 100%;
+     border-radius: 4%;
+     margin-left: 0px;
+     margin-right: 0px;
+     height: 500px;
+ }
+
+ .list-museo {
+     grid-column: 1/3;
+     margin-bottom: 25px;
+     max-height: 50%;
+ }
+
+ /* Fin de museo*/
+
+ /*Cultura*/
+
+ .cultura {
+     background-image: url(../img/Eventos/cultura.jpg    );
+     background-position: center;
+     background-size: cover;
+     border: 0;
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .40;
+     transition: .4s ease;
+ }
+
+ .cultura:hover {
+     width: 700px;
+     opacity: 1;
+     filter: contrast(150%);
+ }
+
+ .seccion-cultura {
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-template-rows: auto;
+     gap: 25px;
+
+ }
+
+ .img-cultura {
+     background-image: url(../img/Eventos/cultura-img.jpg);
+     background-size: cover;
+     background-position: left;
+     width: 100%;
+     border-radius: 4%;
+     margin-left: 0px;
+     margin-right: 0px;
+ }
+
+ .text-cultura {
+     text-align: center;
+ }
+
+ /* Fin cultura*/
+
+ .element {
+     width: 0;
+     flex-grow: 1;
+     object-fit: cover;
+     opacity: .40;
+     transition: .4s ease;
+ }
+
+ .element:hover {
+     width: 700px;
+     opacity: 1;
+     filter: contrast(150%);
+ }
+
+ /* inicia footer */
+
+ footer {
+     background-color: #ff7293;
+     color: #fff;
+     padding: 5px 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     text-align: left;
+ }
+
+ /* Estilo para ir a otra pagina */
+ .links {
+     flex: 1;
+     margin-right: 20px;
+     margin-left: 2%;
+ }
+
+ /* Estilo para los enlaces de redes sociales */
+ .redes-sociales {
+     flex: 1;
+     display: flex;
+     flex-direction: row;
+     justify-content: right;
+     align-items: right;
+     text-align: right;
+ }
+
+ /*Dezplasamiento hacia el contenido*/
+ nav ul {
+     list-style-type: none;
+     display: flex;
+     justify-content: center;
+     padding: 10px 0;
+ }
+
+ nav li {
+     margin: 0 10px;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #fff;
+ }
+
+ section {
+     padding: 50px;
+ }
+
+ /* inicia footer */
 
 
-.footerop {
-    background-color: hsl(335, 100%, 50%);
-    color: white;
-    width: 100%;
-    margin-top: 20px;
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
-    padding: 5px;
-    display: inline-block;
-}
+ .footerop {
+     background-color: hsl(335, 100%, 50%);
+     color: white;
+     width: 100%;
+     margin-top: 20px;
+     text-align: center;
+     margin: 0;
+     font-weight: bold;
+     padding: 5px;
+     display: inline-block;
+ }
 
-.footerop a:link {
-    color: black;
-}
+ .footerop a:link {
+     color: black;
+ }
 
-.footerop a:hover {
-    color: #ffffff;
-}
+ .footerop a:hover {
+     color: #ffffff;
+ }
 
-.footerop a:visited {
-    color: black;
-}
+ .footerop a:visited {
+     color: black;
+ }
 
-.footerop a:hover:visited {
-    color: rgb(255, 255, 255);
-}
+ .footerop a:hover:visited {
+     color: rgb(255, 255, 255);
+ }
 
-/*FIN footer */
+ /*FIN footer */
 
-@media (max-width: 950px) {
-    .header-he{
-        position: relative;
-        z-index: 3;
-    }
-    .hamburger{
-        display:block;
-        position: absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%, -50%);
-        z-index: 2;
-        transition: all 0.7s ease;
-    }
-    .nav-links{
-        position: fixed;
-        background: #333;
-        height: 100vh;
-        width: 100%;
-        flex-direction: column;  
-        justify-content: space-evenly;
-        clip-path: circle(50px at 90% -20%);
-        -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-        
-    }
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-    .nav-links li:nth-child(4){
-        transition: all 0.5s ease 0.7s;
-    }
-    .nav-links li:nth-child(5){
-        transition: all 0.5s ease 0.8s;
-    }
-    .nav-links li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
-        margin: 0;
-    }
-    .nav-links li:nth-child(7){
-        transition: all 0.5s ease 1s;
-        margin: 0;
-    }
-    li.fade{
-        opacity: 1;
-    }
-    /*---animacion al hacerle click al boton del menu*/
-    .toggle .line1{
-        transform: rotate(-45deg) translate(-5px,6px);
-    }
-    .toggle .line2{
-        transition: all 0.6s ease;
-        width:0;
-    }
-    .toggle .line3{
-        transform: rotate(45deg) translate(-5px,-6px);
-    }
-    .block-izq {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-    }
-    .seccion-conciertoimg{
-        width: 100%;
-        border-radius: 4%;
-        display: flex;
-        gap: 10%;
-        margin-top: 25%;
-    }
-    .seccion-concierto{
-    
+ @media (max-width: 950px) {
+     .header-he {
+         position: relative;
+         z-index: 3;
+     }
+
+     .hamburger {
+         display: block;
+         position: absolute;
+         cursor: pointer;
+         right: 5%;
+         top: 50%;
+         transform: translate(-5%, -50%);
+         z-index: 2;
+         transition: all 0.7s ease;
+     }
+
+     .nav-links {
+         position: fixed;
+         background: #333;
+         height: 100vh;
+         width: 100%;
+         flex-direction: column;
+         justify-content: space-evenly;
+         clip-path: circle(50px at 90% -20%);
+         -webkit-clip-path: circle(50px at 90% -10%);
+         transition: all 1s ease-out;
+         pointer-events: none;
+
+     }
+
+     .nav-links.open {
+         clip-path: circle(1000px at 90% -10%);
+         -webkit-clip-path: circle(1000px at 90% -10%);
+         pointer-events: all;
+     }
+
+     .nav-links li {
+         opacity: 0;
+     }
+
+     .nav-links li:nth-child(1) {
+         transition: all 0.5s ease 0.2s;
+     }
+
+     .nav-links li:nth-child(2) {
+         transition: all 0.5s ease 0.4s;
+     }
+
+     .nav-links li:nth-child(3) {
+         transition: all 0.5s ease 0.6s;
+     }
+
+     .nav-links li:nth-child(4) {
+         transition: all 0.5s ease 0.7s;
+     }
+
+     .nav-links li:nth-child(5) {
+         transition: all 0.5s ease 0.8s;
+     }
+
+     .nav-links li:nth-child(6) {
+         transition: all 0.5s ease 0.9s;
+         margin: 0;
+     }
+
+     .nav-links li:nth-child(7) {
+         transition: all 0.5s ease 1s;
+         margin: 0;
+     }
+
+     li.fade {
+         opacity: 1;
+     }
+
+     /*---animacion al hacerle click al boton del menu*/
+     .toggle .line1 {
+         transform: rotate(-45deg) translate(-5px, 6px);
+     }
+
+     .toggle .line2 {
+         transition: all 0.6s ease;
+         width: 0;
+     }
+
+     .toggle .line3 {
+         transform: rotate(45deg) translate(-5px, -6px);
+     }
+
+     .block-izq {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: nowrap;
+     }
+
+     .seccion-conciertoimg {
+         width: 100%;
+         border-radius: 4%;
+         display: flex;
+         gap: 10%;
+         margin-top: 25%;
+     }
+
+     .seccion-concierto {
+
+         grid-template-columns: auto;
+         grid-template-rows: auto auto;
+
+     }
+
+     .list-boxconcierto {
+         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+     }
+
+     .seccion-circoimg {
+         width: 100%;
+         margin-right: 20px;
+     }
+
+     .seccion-circo {
+         display: grid;
+         text-align: justify;
+         justify-content: center;
+         text-decoration: none;
+         list-style-type: none;
+         grid-template-columns: auto;
+         grid-template-rows: 65% 36%;
+         gap: 24px;
+         margin-bottom: 240px;
+     }
+
+     .seccion-museo {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
-        
+     }
+
+     .seccion-cultura {
+         grid-template-columns: auto;
+         grid-template-rows: 40% 900px;
+     }
+
+     .text-cultura {
+         margin-bottom: 25px;
+     }
+ }
+
+ @media (max-width: 400px) {
+     .joy {
+         padding: 10px 0;
+     }
+
+     .logo {
+         margin-bottom: 10px;
+     }
+
+     .logo h1 {
+         font-size: 20px;
+     }
+
+     .logo-img {
+         height: 25px;
+     }
+
+     .seccion-conciertoimg {
+         width: 100%;
+         margin-top: 120px;
+         margin-left: 25px;
+         margin-right: 25px;
+     }
+
+     .seccion-concierto {
+         grid-template-columns: auto;
+         grid-template-rows: auto auto;
+     }
+
+     .list-boxconcierto {
+         grid-template-columns: auto;
+         grid-template-rows: auto auto;
+     }
+
+     .seccion-cultura {
+         grid-template-columns: auto;
+         grid-template-rows: 40% 1400px;
+     }
+     .seccion-museo {
+        grid-template-columns: 250px;
+        grid-template-rows: auto 0px auto ;
+        margin: 20px;
     }
-        
-    .list-boxconcierto{
-       grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    .img-museo{
+        background-image: none;
+        width: 0;
     }
-    .seccion-circoimg{
-        width: 100%;
-        margin-right: 20px;
-    }
-    .seccion-circo{
-        display: grid;
-        text-align: justify;
-        justify-content: center;
-        text-decoration: none;
+    .list-museo {
+        grid-column: 1/2;
+        grid-row: inherit;
+        margin-bottom: 25px;
+        max-height: 100%;
         list-style-type: none;
-        grid-template-columns: auto;
-        grid-template-rows: 65% 36%;
-        gap: 24px;
-        margin-bottom: 240px;
     }
-}
-
-@media (max-width: 400px) {
-    .joy {
-        padding: 10px 0;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .logo h1 {
-        font-size: 20px;
-    }
-
-    .logo-img {
-        height: 25px;
-    }
-    .seccion-conciertoimg{
-        width: 100%;
-        margin-top: 120px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    .seccion-concierto{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-    }
-        
-    .list-boxconcierto{
-        grid-template-columns: auto  ;
-        grid-template-rows: auto auto ;
-    }
-}
+ }
